@@ -108,6 +108,9 @@ ul li a:hover {
   color: white;
   font-family: 'Roboto', sans-serif;
   padding: 1rem;
+  opacity: 0;  /* Initially hidden */
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 0s 1s; /* Smooth transition */
 }
 
 .poster {
@@ -121,10 +124,6 @@ ul li a:hover {
 
 .title {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-}
-
-.details {
   font-size: 14px;
   margin-top: 10px;
   color: rgb(172, 172, 172);
@@ -149,6 +148,27 @@ ul li a:hover {
   text-align: left;
 }
 
+/* Loading Screen */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.loading-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   ul {
@@ -160,6 +180,8 @@ ul li a:hover {
     width: 70%;
   }
 }
+
+
 
 @media (max-width: 768px) {
   nav {
@@ -581,3 +603,4 @@ footer{
       font-size: 16px;
   }
 }
+
