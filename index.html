@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peaky Blinders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="updateEpisodes()">
+
+    <img src="./Image/bottomlogo.png" alt="Round Icon" class="fixed-circle-img">
+
+    <nav>
+        <div>
+            <img src="./Image/logo.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#trailers">Trailers</a></li>
+            <li><a href="#season">Episodes</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!----------Hero Section----------->
+
+    <div class="herosection" id="home">
+        <div class="poster">
+            <div class="container1">
+                <img class="name"
+                    src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABTu-cSOrhncekG-on7pGKLEY2Ucc8DpaoeOXCXdFv_MHO6As8yI8Ern19pEHM3Wxk-CN-NsubsTknFJl67PUAw2TnKZbALOrxXpuSyKjHtAINURdodi_kduVsS_F4JzGzSNxARylJYpGoalSK-k31jbzfEBhmUlpL--ZXIKuahfdMih8JoU9wg.png?r=f38"
+                    alt="nameplate"><br><br><br>
+                <h1 class="title">PEAKY BLINDERS</h1><br>
+                <p class="details">2013 | A | 6 Seasons | Drama</p>
+                <p class="description">
+                    A notorious gang in 1919 Birmingham, England, is led by the fierce Tommy Shelby,<br> a crime boss set on
+                    moving up in the world no matter the cost.
+                </p>
+                <p class="details">Starring: Cillian Murphy, Sam Neill, Helen McCrory</p>
+                <p class="details">Creators: Steven Knight</p>
+            </div>
+        </div>
+    </div>
+
+    <!--video-->
+    <div class="vr" id="trailers">
+        <div class="video-container">
+            <h2>Videos <span>| Peaky Blinders</span></h2>
+            <div class="slider-wrapper">
+                <button class="prev">&#10094;</button>
+                <div class="slider">
+                    <div class="slide">
+                        <video src="./video/trailor1.mp4"></video>
+                        <button class="play-pause">&#9658;</button>
+                        <p>Season 01 Teaser: Peaky Blinders</p>
+                    </div>
+                    <div class="slide">
+                        <video src="./video/trailor2.mp4"></video>
+                        <button class="play-pause">&#9658;</button>
+                        <p>Season 02 Teaser: Peaky Blinders</p>
+                    </div>
+                    <div class="slide">
+                        <video src="./video/trailor3.mp4"></video>
+                        <button class="play-pause">&#9658;</button>
+                        <p>Season 03 Teaser: Peaky Blinders</p>
+                    </div>
+                    <div class="slide">
+                        <video src="./video/trailor4.mp4"></video>
+                        <button class="play-pause">&#9658;</button>
+                        <p>Season 04 Teaser: Peaky Blinders</p>
+                    </div>
+                    <div class="slide">
+                        <video src="./video/trailor5.mp4"></video>
+                        <button class="play-pause">&#9658;</button>
+                        <p>Season 05 Teaser: Peaky Blinders</p>
+                    </div>
+                    <div class="slide">
+                        <video src="./video/trailor6.mp4"></video>
+                        <button class="play-pause">&#9658;</button>
+                        <p>Season 06 Teaser: Peaky Blinders</p>
+                    </div>
+                </div>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Exploring things-->
+
+    <div class="explore" >
+        <h2>Episodes <span>| Peaky Blinders</span></h2>
+        <label for="season"></label><br>
+        <select id="season" onchange="updateEpisodes()">
+            <option value="1" selected>Season 1</option>
+            <option value="2">Season 2</option>
+            <option value="3">Season 3</option>
+            <option value="4">Season 4</option>
+            <option value="5">Season 5</option>
+            <option value="6">Season 6</option>
+        </select>
+        <div id="episodes"></div>
+    </div>
+
+<!--More Detaile about cast-->
+<div class="detail">
+    <h2 class="head-cast">More Details</h2>
+    <div class="container">
+        <div class="column">
+            <h3>Watch offline</h3>
+            <p>Download and watch everywhere you go.</p>
+            <h3>Cast</h3>
+            <div class="cast-list">
+                <p>Cillian Murphy<br>Annabelle Wallis<br>Andy Nyman<br>Matthew Postlethwaite<br>Charlie Murphy<br>Natasha O'Keeffe</p>
+            </div>
+        </div>
+        <div class="column">
+            <h3>Genres</h3>
+            <div class="genre-list">
+                <p>TV Dramas, British, Period Pieces, Crime TV Shows</p>
+            </div>
+            <div class="cast-list">
+                <p>Sam Neill<br>Sophie Rundle<br>Charlie Creed-Miles<br>Ian Peck<br>Aimee-Ffion Edwards</p>
+            </div>
+        </div>
+        <div class="column">
+            <h3>This show is...</h3>
+            <p>Violent</p>
+            <div class="cast-list">
+                <p>Helen McCrory<br>Tom Hardy<br>Charlotte Riley<br>Tony Pitts<br>Anya Taylor-Joy</p>
+            </div>
+        </div>
+        <div class="column">
+            <h3>About Peaky Blinders</h3>
+            <p>Go behind the scenes and learn more on <a href="https://www.netflix.com/tudum/peaky-blinders">Tudum.com</a></p>
+            <div class="cast-list">
+                <p>Paul Anderson<br>Joe Cole<br>David Dawson<br>Aidan Gillen<br>Sam Claflin</p>
+            </div>
+            <div class="cast-list">
+                <p>Iddo Goldberg<br>Ned Dennehy<br>Jeffrey Postlethwaite<br>Adrien Brody<br>Finn Cole</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <h3>Made with ❤ by <a href="https://www.linkedin.com/in/sahil-thorve-6b1429258/" target="_blank">Sahil Thorve</a></h3>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
