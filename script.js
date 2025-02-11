@@ -310,3 +310,18 @@ playPauseButtons.forEach((button, i) => {
 
 // Adjust slider when window resizes
 window.addEventListener('resize', updateSlider);
+
+// loading page script
+
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.querySelector(".loading-video");
+  video.onended = () => {
+      document.querySelector(".loading-screen").style.display = "none";
+      const heroSection = document.querySelector(".herosection");
+      heroSection.style.visibility = "visible";
+      heroSection.style.opacity = "1";
+  };
+});
+
+
+
